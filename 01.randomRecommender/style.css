@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #1f2d3d;
+}
+
+body::after {
+    content: "seunghye©";
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+.card {
+    width: 800px;
+    height: auto;
+    padding: 40px 36px 36px;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: box-shadow 250ms ease-in, transform 250ms ease-in;
+}
+
+.card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+
+#restaurant {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-around;
+    
+}
+
+.restaurant-content {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    cursor: pointer;
+    margin: 10px auto;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;letter-spacing: 0.01em;
+    background: linear-gradient(90deg, #ff8806 0%, #fb07f3 100%);
+}
+
+#img img{
+    width: 330px;
+    height: 330px;
+    border-radius: 6px;
+}

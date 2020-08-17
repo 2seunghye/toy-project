@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Chicken Generator</title>
+    <script src="random.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <h2>
+                대구맛집사전 🤔
+            </h2>
+            <h5>오늘 뭐 먹을지 고민된다면 눌러보세요!
+            </h5>
+            <button class="button-group" onclick="printMeal()">맛집 추천받기 🍟</button>
+        </div>
+        <div id="restaurant">
+            <div id="img">
+            </div>
+            <div class="restaurant-content">
+                <h2 id="name"></h2>
+                <p id="info"></p>
+                <p id="address"></p>
+                <p id="hours"></p>
+                <p id="menu"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
