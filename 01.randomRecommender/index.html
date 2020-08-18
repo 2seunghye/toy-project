@@ -5,19 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Chicken Generator</title>
-    <script src="random.js"></script>
+    <script src="restaurant.js"></script>
+    <script src="cafe.js"></script>
+    <script src="tavern.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a83f597bce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="card">
+        <h1>🤹🏻‍♀️ 대구 맛집 랜덤 추천 🤹🏻‍♀️</h1>
         <div class="container">
-            <h2>
-                대구맛집사전 🤔
-            </h2>
-            <h5>오늘 뭐 먹을지 고민된다면 눌러보세요!
-            </h5>
-            <button class="button-group" onclick="printMeal()">맛집 추천받기 🍟</button>
+            <div class="random-list restaurant-recommender">
+                <div class="random-button">
+                    <button type="button" onclick="printMeal()">
+                        <i class="fas fa-utensils"></i>
+                        <h3>밥집추천</h3>
+                    </button>
+                    <!-- <i class="fas fa-question"></i> -->
+                </div>
+            </div>
+
+            <div class="random-list cafe-recommender">
+                <div class="random-button">
+                    <button type="button" onclick="printCafe()">
+                        <i class="fas fa-coffee"></i>
+                        <h3>카페추천</h3>
+                    </button>
+                    <!-- <i class="fas fa-question"></i> -->
+                </div>
+            </div>
+
+            <div class="random-list tavern-recommender">
+                <div class="random-button">
+                    <button type="button" onclick="printTarvern()">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>술집추천</h3>
+                    </button>
+                    <!-- <i class="fas fa-question"></i> -->
+                </div>
+            </div>
+
         </div>
         <div id="restaurant">
             <div id="img">

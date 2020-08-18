@@ -41,6 +41,12 @@ body::after {
     transition: box-shadow 250ms ease-in, transform 250ms ease-in;
 }
 
+.card h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+
 .card:hover {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -50,13 +56,13 @@ body::after {
 #restaurant {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 40px;
     justify-content: space-around;
     
 }
 
 .restaurant-content {
-    width: 330px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -64,25 +70,86 @@ body::after {
     align-items: start;
 }
 
-.button-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 200px;
-    cursor: pointer;
-    margin: 10px auto;
-    height: 40px;
-    border: none;
-    outline: none;
+#img img{
+    width: 280px;
+    height: 280px;
     border-radius: 6px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;letter-spacing: 0.01em;
-    background: linear-gradient(90deg, #ff8806 0%, #fb07f3 100%);
 }
 
-#img img{
-    width: 330px;
-    height: 330px;
-    border-radius: 6px;
+.container {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.random-image {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 1px 1px 5px #d3d3d3;
+}
+
+
+.random-button {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: auto;
+}
+
+.random-button button {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px #c4c4c4;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+}
+
+.random-button i {
+  padding-right: 8px;
+}
+
+.random-button button:hover{
+  background: #486483;
+  color: #fff;
+}
+
+.random-button button:active {
+  background: #486483;
+  color: #fff;
+  transform: translateY(2px);
+  /* box-shadow: inset 0px 2px 5px #ffffff; */
+}
+
+
+.random-button button .off {
+  display: none;
+}
+
+
+.random-button button:hover .off {
+  display: block;
+}
+
+.random-button button:hover .on {
+  display: none;
+}
+
+
+
