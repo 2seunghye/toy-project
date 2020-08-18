@@ -14,43 +14,38 @@
 
 <body>
     <div class="card">
-        <h1>🤹🏻‍♀️ 대구 맛집 랜덤 추천 🤹🏻‍♀️</h1>
-        <div class="container">
-            <div class="random-list restaurant-recommender">
-                <div class="random-button">
-                    <button type="button" onclick="printMeal()">
-                        <i class="fas fa-utensils"></i>
-                        <h3>밥집추천</h3>
-                    </button>
-                    <!-- <i class="fas fa-question"></i> -->
-                </div>
-            </div>
-
-            <div class="random-list cafe-recommender">
-                <div class="random-button">
-                    <button type="button" onclick="printCafe()">
-                        <i class="fas fa-coffee"></i>
-                        <h3>카페추천</h3>
-                    </button>
-                    <!-- <i class="fas fa-question"></i> -->
-                </div>
-            </div>
-
-            <div class="random-list tavern-recommender">
-                <div class="random-button">
-                    <button type="button" onclick="printTarvern()">
-                        <i class="fas fa-glass-cheers"></i>
-                        <h3>술집추천</h3>
-                    </button>
-                    <!-- <i class="fas fa-question"></i> -->
-                </div>
-            </div>
-
+        <div class="card-title">
+            <h1>🤹🏻‍♀️ 대구 맛집 랜덤 추천 🤹🏻‍♀️</h1>
+            <p>동성로를 중심으로 한, 맛있는 맛집을 추천해드립니다!</p>
         </div>
-        <div id="restaurant">
+        <div class="card-container">
+            <div class="random-button">
+                <button type="button" onclick="printMeal()">
+                    <i class="fas fa-utensils"></i>
+                    <h3>밥집추천</h3>
+                </button>
+                <!-- <i class="fas fa-question"></i> -->
+            </div>
+            <div class="random-button">
+                <button type="button" onclick="printCafe()">
+                    <i class="fas fa-coffee"></i>
+                    <h3>카페추천</h3>
+                </button>
+                <!-- <i class="fas fa-question"></i> -->
+            </div>
+            <div class="random-button">
+                <button type="button" onclick="printTarvern()">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>술집추천</h3>
+                </button>
+                <!-- <i class="fas fa-question"></i> -->
+            </div>
+        </div>
+
+        <div class="recommended-container">
             <div id="img">
             </div>
-            <div class="restaurant-content">
+            <div class="recommended-content">
                 <h2 id="name"></h2>
                 <p id="info"></p>
                 <p id="address"></p>

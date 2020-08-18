@@ -41,59 +41,26 @@ body::after {
     transition: box-shadow 250ms ease-in, transform 250ms ease-in;
 }
 
-.card h1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-title h1 {
   font-size: 24px;
 }
 
-.card:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  }
-
-
-#restaurant {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    justify-content: space-around;
-    
+.card-title p {
+  padding: 15px;
 }
 
-.restaurant-content {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    text-align: start;
-    align-items: start;
-}
-
-#img img{
-    width: 280px;
-    height: 280px;
-    border-radius: 6px;
-}
-
-.container {
+.card-container {
   width: 600px;
   height: auto;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.random-image {
-  width: 150px;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  box-shadow: 1px 1px 5px #d3d3d3;
 }
 
 
@@ -121,35 +88,41 @@ body::after {
   transition-timing-function: ease-in-out;
 }
 
-.random-button i {
-  padding-right: 8px;
-}
-
 .random-button button:hover{
-  background: #486483;
+  background: #4e6b8b;
   color: #fff;
 }
 
 .random-button button:active {
-  background: #486483;
+  background: #4e6b8b;
   color: #fff;
   transform: translateY(2px);
-  /* box-shadow: inset 0px 2px 5px #ffffff; */
 }
 
-
-.random-button button .off {
-  display: none;
+.random-button i {
+  padding-right: 8px;
 }
 
-
-.random-button button:hover .off {
-  display: block;
+.recommended-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-around;
+    
 }
 
-.random-button button:hover .on {
-  display: none;
+.recommended-content {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
 }
 
-
-
+#img img{
+    width: 280px;
+    height: 280px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px #c4c4c4;
+}
