@@ -54,8 +54,16 @@ function add_months_container() {
   }
 }
 
+function addID() {
+  var a = document.querySelectorAll('.circle');
+  for (i = 0; i < a.length; i++) {
+    document.getElementsByClassName('circle')[i].id = `${i}`;
+  }
+}
+
 function init() {
   add_months_container();
+  addID();
 }
 
 init();

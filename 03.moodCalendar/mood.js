@@ -4,7 +4,6 @@ let activeColor = '';
 
 moods.forEach((mood) => {
   mood.addEventListener('click', () => {
-    // if is already selected, deselect it
     if (mood.classList.contains('clicked')) {
       mood.classList.remove('clicked');
       activeColor = defaultColor;
@@ -24,3 +23,20 @@ circles.forEach((circle) => {
     circle.style.backgroundColor = activeColor;
   });
 });
+
+function save() {
+  for (let i = 0; i < circles.length; i++) {
+    document.getElementById(`${i}`).addEventListener('click', () => {
+      localStorage.setItem(`bgcolor${i}`, activeColor);
+    });
+  }
+}
+
+function load() {
+  for (let i = 0; i < circles.length; i++) {
+    document.getElementById(`${i}`).style.backgroundColor = localStorage.getItem(`bgcolor${i}`);
+  }
+}
+
+load();
+save();
