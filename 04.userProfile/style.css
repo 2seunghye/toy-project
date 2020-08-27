@@ -84,8 +84,16 @@ body {
   border-radius: 10px;
 }
 
+.user-follow:hover {
+  border: 1px dashed #0066ff;
+}
+
 .follow-btn {
   padding: 8px 28px;
   color: #8492a6;
   text-decoration: none;
+}
+
+.follow-btn:hover {
+  color: #0066ff;
 }
