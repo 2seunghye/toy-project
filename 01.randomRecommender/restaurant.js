@@ -110,3 +110,14 @@ function printMeal() {
     document.getElementById("hours").style.padding = "0 0 10px 0"
     document.getElementById("menu").style.padding = "0 0 10px 0"
 };
+
+
+
+const createMeal = meal => {
+    const ingredients = [];
+    let i = 1;
+    while(meal[`strIngredient${i}`]){
+        ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`,);
+       i++;
+    }
+ }

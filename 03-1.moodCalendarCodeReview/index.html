@@ -9,18 +9,29 @@
   </head>
   <body>
     <div class="container">
-      <h2>2020 Mood Calendar</h2>
+      <h2 id="h2">2020 Mood Calendar</h2>
       <p>~ color each day depending on what your mood was / is ~</p>
       <div class="mood_container">
-        <i class="far fa-laugh"></i>
-        <i class="far fa-smile"></i>
-        <i class="far fa-meh"></i>
-        <i class="far fa-sad-tear"></i>
-        <i class="far fa-angry"></i>
+        <button class="mood" id="mood_1">
+          <i class="far fa-laugh"></i>
+        </button>
+        <button class="mood" id="mood_2">
+          <i class="far fa-smile"></i>
+        </button>
+        <button class="mood" id="mood_3">
+          <i class="far fa-meh"></i>
+        </button>
+        <button class="mood" id="mood_4">
+          <i class="far fa-sad-tear"></i>
+        </button>
+        <button class="mood" id="mood_5">
+          <i class="far fa-angry"></i>
+        </button>
       </div>
       <div id="calendar" class="calendar"></div>
     </div>
 
     <script src="index.js"></script>
+    <script src="mood.js"></script>
   </body>
 </html>

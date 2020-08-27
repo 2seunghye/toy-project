@@ -81,7 +81,6 @@ function genRandom() {
     return number;
 };
 
-// 음식 이름 올리는 ...
 function randomTarvern() {
     const number = genRandom();
 

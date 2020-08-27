@@ -30,10 +30,10 @@ const createMeal = (meal) => {
   const newInnerHTML = `
         <div class="row-box">
             
-            <div class="columns five">
+            <div class="columns one">
                 <img src="${meal.strMealThumb}" alt="Meal Image">
             </div>
-            <div class="columns six">
+            <div class="columns two">
                         ${
                           meal.strCategory
                             ? `<p><strong>Category:</strong> ${meal.strCategory}</p>`
