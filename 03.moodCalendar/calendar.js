@@ -1,11 +1,11 @@
-var week_days = ['월', '화', '수', '목', '금', '토', '일'];
-var months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let week_days = ['월', '화', '수', '목', '금', '토', '일'];
+let months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 //월 컨테이너
 function add_months_container() {
   for (let i = 0; i < months.length; i++) {
     // 월 컨테이너 추가
-    var months_container = document.createElement('div');
+    let months_container = document.createElement('div');
     months_container.setAttribute('class', 'months');
     months_container.setAttribute('id', `${i + 1}month`);
     document.getElementById(`${i + 1}month`);
@@ -13,7 +13,7 @@ function add_months_container() {
     document.getElementById('calendar').appendChild(months_container);
 
     // 요일 컨테이너 추가
-    var week_days_container = document.createElement('div');
+    let week_days_container = document.createElement('div');
     week_days_container.setAttribute('id', 'week_days');
 
     for (let i = 0; i < week_days.length; i++) {
@@ -24,7 +24,7 @@ function add_months_container() {
 
     // 일 컨테이너 추가
 
-    var days_container = document.createElement('div');
+    let days_container = document.createElement('div');
     days_container.setAttribute('class', 'days_container');
     days_container.setAttribute('id', `${i + 1}month_days`);
     document.getElementById(`${i + 1}month`).appendChild(days_container);
@@ -42,7 +42,7 @@ function add_months_container() {
         document.getElementById(`${i + 1}month_days`).innerHTML += `<br>`;
       }
 
-      var temp;
+      let temp;
       if (j < day) {
         temp = `<div class="days"><span></span></div>`;
         document.getElementById(`${i + 1}month_days`).innerHTML += temp;
@@ -55,7 +55,7 @@ function add_months_container() {
 }
 
 function addID() {
-  var a = document.querySelectorAll('.circle');
+  let a = document.querySelectorAll('.circle');
   for (i = 0; i < a.length; i++) {
     document.getElementsByClassName('circle')[i].id = `${i}`;
   }
