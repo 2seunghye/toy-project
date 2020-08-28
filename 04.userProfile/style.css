@@ -85,7 +85,7 @@ body {
 }
 
 .user-follow:hover {
-  border: 1px dashed #0066ff;
+  border: 1px dashed rgb(107, 110, 156);
 }
 
 .follow-btn {
@@ -95,5 +95,5 @@ body {
 }
 
 .follow-btn:hover {
-  color: #0066ff;
+  color: rgb(107, 110, 156);
 }
