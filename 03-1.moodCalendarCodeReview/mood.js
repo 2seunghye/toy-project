@@ -24,7 +24,7 @@ function moodBtnClick(moodBtn){
 }
 
 function initCircleBtnList(){
-  const circleBtnList = document.querySelectorAll('.circle');
+  var circleBtnList = document.querySelectorAll('.circle');
   
   circleBtnList.forEach((circleBtn) => {
     circleBtn.addEventListener('click', () => circleBtnClick(circleBtn));
@@ -41,16 +41,13 @@ function circleBtnClick(circleBtn){
     delete selectedCircleBtnList[circleBtn.id];
   }
 
-  var isSelectedMoodBtn = selectedMoodBtn != '';
-  var isDifferentOfPreviousSelctedMood = previousSelectedMood != selectedMoodBtn.id;
-
-  if (isSelectedMoodBtn && isDifferentOfPreviousSelctedMood){
+  if (selectedMoodBtn != '' && previousSelectedMood != selectedMoodBtn.id){
     circleBtn.classList.add(selectedMoodBtn.id);
     selectedCircleBtnList[circleBtn.id] = selectedMoodBtn.id;
   }
 }
 
-function saveMoodListAtLocalStorage() {
+function save() {
   localStorage.setItem('moodList', JSON.stringify(selectedCircleBtnList));
 }
 

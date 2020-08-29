@@ -82,20 +82,26 @@ body {
   color: #fa9090;
 }
 
-.circle.mood_1 {
-  background-color: rgb(250, 192, 192)!important ;
+.mood_1 {
+  background-color: rgb(250, 192, 192)!important ; 
+  color: #fff !important;
 }
-.circle.mood_2 {
+
+.mood_2 {
   background-color: rgb(255, 213, 122) !important;
+  color: #fff !important;
 }
-.circle.mood_3 {
+.mood_3 {
   background-color: rgb(147, 248, 169) !important;
+  color: #fff !important;
 }
-.circle.mood_4 {
+.mood_4 {
   background-color: rgb(144, 179, 255) !important;
+  color: #fff !important;
 }
-.circle.mood_5 {
+.mood_5 {
   background-color: #fa9090 !important;
+  color: #fff !important;
 }
 
 .empty {
