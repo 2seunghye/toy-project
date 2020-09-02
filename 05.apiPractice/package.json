@@ -1,0 +1,45 @@
+{
+  "name": "apipractice",
+  "version": "1.0.0",
+  "description": "Project with API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:assets": "WEBPACK_ENV=development webpack",
+    "build:assets": "WEBPACK_ENV=production webpack"
+  },
+  "author": "leeseunghye",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "css-loader": "^4.2.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "helmet": "^4.1.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "pug": "^3.0.0",
+    "pug-plugin-trusted-types": "^2.0.2",
+    "pug-require": "^2.0.2",
+    "pug-template-tag": "^2.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sass-loader": "^10.0.1",
+    "simple-csp": "^0.1.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
