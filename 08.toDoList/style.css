@@ -1,0 +1,111 @@
+/* Include the padding and border 
+in an element's total width and height */
+
+* {
+    box-sizing: border-box ;
+}
+ /* border-box는 안쪽 여백과 테두리는 포함하고 바깥여백은 포함하지 않음 */
+
+ /* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 12px 12px 40px; /* 위 오른쪽 아래 왼쪽 순 */
+    background: #eee;
+    transition: 0.3s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on  다시 수정!!!!!!!!!!!!*/
+ul li.checked::before {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .close:hover {
+      background: rgb(223, 167, 167);
+      color: white;
+  }
+
+  /* Style the header */
+  .header {
+      padding: 30px 40px;
+      text-align: center;
+      background: rgb(240, 240, 240);
+
+  }
+
+  .header::after{ /* 무슨말인지...? */
+      content: "";
+      display: table;
+      clear : both;
+  }
+
+  input {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      width: 75%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;;
+  }
+
+  .addBtn {
+      padding: 10px;
+      width:25%;
+      background: #d9d9d9;
+      color: #555;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  .addBtn:hover {
+      background: #bbb
+  }
+
+  h2 {
+      font-size: 30px;
+  }
