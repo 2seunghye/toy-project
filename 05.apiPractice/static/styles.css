@@ -262,6 +262,9 @@ body {
   margin-left: 5px;
   cursor: pointer; }
 
+.searchForm button:hover {
+  background-color: #928f8c; }
+
 .searchForm button:active,
 .searchForm button:focus {
   border: none;

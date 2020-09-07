@@ -3,6 +3,7 @@ html
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com; style-src * 'unsafe-inline' data: blob: 'self' ;script-src * 'unsafe-inline' 'unsafe-eval' * data: blob: ;img-src https://ssl.pstatic.net/imgmovie/mdi/mit110/0623/62328_P30_110120.jpg data: content: * 'self';")
         title Practice
         link(rel="stylesheet", href="../static/styles.css")
 
@@ -11,7 +12,7 @@ html
             .container
                 h1 Which movie are <br> you looking for?
                 form.searchForm(action="/search", method="GET")
-                    input(type="text", id="searchInput", placeholder="Searching by term..", name="term", minlength="1")
+                    input(type="text", id="searchInput", placeholder="Searching by term..", name="term", minlength="2")
                     button(type="submit" id="searchButton") Search
                 block content
             

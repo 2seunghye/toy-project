@@ -78,6 +78,10 @@ body {
   cursor: pointer;
 }
 
+.searchForm button:hover {
+  background-color: #928f8c;
+}
+
 .searchForm button:active,
 .searchForm button:focus {
   border: none;
