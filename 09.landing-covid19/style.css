@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fff8f8;
+}
+
+/* Reset CSS */
+
+a {
+    text-decoration: none !important;
+    color: inherit; /* 부모 색을 상속받아라 */
+}
+
+button,
+input,
+textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;    
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    box-shadow: none;
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left:0;
+}
+
+
+h2 {
+    color: #FA5652;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.333333;
+}
+
+span {
+    color: #035755;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.333333;
+}
+
+p {
+    color: #4B4F51;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* button */
+
+.fill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 120px;
+    height: 40px;
+    background-color: #fb4c47;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: bold;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+}
+
+.fill-button.inverted {
+    background: rgba(250, 86, 82, 0.15);
+    color: #FA5652;
+}
+
+.fill-button:hover {
+    color: #fff;
+    opacity: 0.5;
+    transition: opacity 300ms ease-in-out;
+}
+
+/* Landing */
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(255, 233, 233), #FFF8F8);
+}
+
+.landing-content {
+    text-align: center;
+    padding-top: 40px;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.landing-illustration {
+    padding-top: 70px;
+    width: 100%;
+}
+
+.landing-illustration img {
+    width: inherit;
+}
+
+/* About */
+
+.about {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-illustration {
+    width: 100%;
+}
+
+.about-illustration img {
+    width: inherit;
+}
+
+/* contagion */
+
+.contagion {
+    width: 100%;
+    padding-top:50px;
+}
+
+.contagion-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contagion-card {
+    display: block;
+    text-align: center;
+    padding: 24px 0 32px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    background-color: #fff;
+
+}
+
+.contagion-card img {
+    margin: 0 auto 16px;
+    display: block;
+    width: auto;
+    height: 195px;
+}
+
+.contagion-card h3 {
+    color: #035755;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.333333;
+}
+
+.contagion-card span {
+    color: #4B4F51;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.333333;
+}
+
+/* Symptomps */
+
+.symptomps {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.symptomps-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.symptomps-illustration {
+    width: 100%;
+}
+
+.symptomps-illustration img {
+    width: inherit;
+}
+
+/* What should we do */
+
+.doit {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.doit-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.doit-list {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.doit-list p {
+    margin-top: 20px;
+}
+
+.doit-list span {
+    font-size: 20px;
+}
+
+.doit-illustration {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.doit-illustration img {
+    width: inherit;
+}
+
+/* Subscribe */
+
+.question h2 {
+    color: #0C6C44;
+    font-size: 20px;
+}
+
+.subscription-form {
+    padding-bottom: 100px;
+}
+
+.subscription-form .input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 65px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.subscription-form .input-group .fill-button {
+    width: 100%;
+}
+
+/* Footer */
+
+.footers {
+    width: 100%;
+}
+
+.logo {
+    padding-bottom: 30px;
+}
+
+.logo span {
+    font-size: 15px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.footer-menu li {
+    color: #4B4F51;
+    padding-bottom: 10px;
+}
+
+.footer-sns ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-sns li {
+    padding-right: 15px;
+}
+
+/* 768px 이상 (Desktop) */
+
+@media screen and (min-width: 768px) {
+
+
+    /* button */
+
+    .fill-button {
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Landing */
+
+    .landing {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-top: 80px;
+    }
+
+    .landing-content {
+        text-align: start;
+        position: relative;
+        padding-bottom: 150px;
+    }
+
+    .landing-content h2 {
+        font-size: 24px;
+    }
+
+    .landing-content span {
+        font-size: 34px;
+    }
+
+    .landing-content p {
+        font-size: 16px;
+    }
+
+    .landing-illustration {
+        position: relative;
+        width: 500px;
+    }
+
+    .landing-illustration img {
+        position: absolute;
+        left: -50%;
+        width: inherit;
+    }
+
+    /* About */
+
+    .about {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .about-content {
+        text-align: start;
+        position: relative;
+        padding-bottom: 70px;
+
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content span {
+        font-size: 34px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-illustration {
+        width: 100%;
+    }
+
+    .about-illustration img {
+        position: absolute;
+        left: 0;
+        width: inherit;
+    }
+
+    /* contagion */
+
+    .contagion {
+        padding-top: 80px;
+    }
+
+    .contagion-content h2 {
+        font-size: 24px;
+    }
+
+    .contagion-content span {
+        font-size: 34px;
+    }
+
+    .contagion-content p {
+        font-size: 16px;
+    }
+
+    .contagion-card img {
+        padding: 20px;
+    }
+
+    /* Symptomps */
+
+    .symptomps-content h2 {
+        font-size: 24px;
+    }
+
+    .symptomps-content span {
+        font-size: 34px;
+    }
+
+    .symptomps-content p {
+        font-size: 16px;
+    }
+
+
+    /* What should we do */
+
+    .doit {
+        padding-top: 80px;
+        align-items: center;
+    }
+
+    .doit-content h2 {
+        font-size: 24px;
+    }
+
+    .doit-content span {
+        font-size: 34px;
+    }
+
+    .doit-content p {
+        font-size: 16px;
+    }
+
+    .doit-list {
+        padding: 100px 40px;
+        text-align: start;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doit-list span {
+        font-size: 24px;
+    }
+
+    .doit-list p {
+        font-size: 18px;
+    }
+
+    .doit-illustration img {
+        padding: 60px 0;
+    }
+
+
+    /* Subscribe */
+
+    .question h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .subscription-form {
+        position: relative;
+        padding-bottom: 120px;
+    }
+
+    .subscription-form .input-group input {
+        height: 58px;
+    }
+
+    .subscription-form .input-group .fill-button {
+        position: absolute;
+        top:-14px;
+        right: 10px;
+        width: 150px;
+        height: 50px;
+    }
+
+    /* Footer */
+
+    .logo {
+        text-align: center;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .footer-sns ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+/* 992px 이상 (Desktop) */
+
+@media screen and (min-width: 992px) {
+
+    .contagion-card h3 {
+        font-size: 24px;
+    }
+
+    .contagion-card span {
+        font-size: 13px;
+    }
+
+}
