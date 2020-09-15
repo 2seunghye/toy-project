@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="play-container">
       <div class="sound-container">
-        <button id="startBtn" onclick="pauseSound()">🔇</button>
-        <button id="startBtn" onclick="playSound()">🔈</button>
+        <button id="pauseBtn" onclick="pauseSound()">🔇</button>
+        <button id="playBtn" onclick="playSound()">🔈</button>
       </div>
 
       <div class="start-container">
-        <button id="startBtn" onclick="startGame()">게임 시작</button>
-        <div id="timer">01:00</div>
+        <div id="timer">00:30</div>
+        <button id="startBtn" onclick="startGame()">START</button>
+        <button id="stopBtn" onclick="stopGame()">STOP</button>
         <div id="play-count"></div>
       </div>
       <div id="insect-container"></div>

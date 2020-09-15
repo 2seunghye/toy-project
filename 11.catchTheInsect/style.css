@@ -1,10 +1,54 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #333;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #8cd790;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+
+button {
+  color: #fff;
+
+  font-size: 30px;
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 80px;
+}
+
+.sound-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 900px;
+}
+
+#playBtn {
+  margin-left: 10px;
 }
 
 #play-container {
@@ -14,23 +58,18 @@ body {
   align-items: center;
   border-radius: 10px;
   position: relative;
-  background-color: #fff;
   overflow: hidden;
-  width: 800px;
+  width: 1000px;
   height: 600px;
 }
 
 #insect-container {
-  background-color: rgb(236, 236, 236);
+  background-color: rgba(122, 185, 125, 0.7);
   border-radius: 10px;
-  width: 700px;
+  width: 900px;
   height: 450px;
   position: relative;
   overflow: hidden;
-}
-
-.sound-container {
-  display: flex;
 }
 
 .insect {
@@ -43,6 +82,24 @@ body {
 }
 
 #play-count {
+  text-align: end;
+  width: 160px;
   font-size: 20px;
-  color: #333;
+}
+
+#startBtn {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#startBtn:hover {
+  color: rgb(241, 240, 240);
+}
+
+#stopBtn {
+  font-family: 'Press Start 2P', cursive;
+  display: none;
+}
+
+#stopBtn:hover {
+  color: rgb(241, 240, 240);
 }
