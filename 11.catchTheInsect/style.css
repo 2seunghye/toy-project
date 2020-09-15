@@ -1,0 +1,48 @@
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#play-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  width: 800px;
+  height: 600px;
+}
+
+#insect-container {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  width: 700px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sound-container {
+  display: flex;
+}
+
+.insect {
+  position: absolute;
+  cursor: pointer;
+}
+
+.clicked {
+  visibility: hidden;
+}
+
+#play-count {
+  font-size: 20px;
+  color: #333;
+}
