@@ -1,9 +1,9 @@
 let count = 0;
-document.getElementById('play-count').innerHTML = `Score=0`;
-
 let i = 0;
 let time = 1000;
 let maxScore = 0;
+
+document.getElementById('play-count').innerHTML = `Score=0`;
 
 function addInsect() {
   setTimeout(createInsect(), 1000);
@@ -49,7 +49,7 @@ function removeInsect() {
 }
 
 //timer
-let sec = 5;
+let sec = 29;
 
 function addTimer() {
   let m = Math.floor(sec / 60);

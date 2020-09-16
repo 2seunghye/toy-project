@@ -53,13 +53,11 @@ let timerId = setTimeout(function tick() {
   }
   timerId = setTimeout(tick, time);
   i += 1;
-  function handleClick() {
-    document.querySelector(`#bug${i}`).classList.add(CLICKED_CLASS);
+
+  if (i == 20) {
+    clearInterval(timerId);
+    alert('Game Over');
   }
-  //   if (i == 20) {
-  //     clearInterval(timerId);
-  //     alert('Game Over');
-  //   }
 }, 1000);
 
 // let CLICKED_CLASS = 'clicked';

@@ -32,12 +32,16 @@ button:focus {
   outline: none;
 }
 
-.start-container {
+#play-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 900px;
-  height: 80px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: 600px;
 }
 
 .sound-container {
@@ -51,16 +55,35 @@ button:focus {
   margin-left: 10px;
 }
 
-#play-container {
+.start-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  width: 1000px;
-  height: 600px;
+  width: 900px;
+  height: 80px;
+}
+
+#startBtn {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#startBtn:hover {
+  color: rgb(241, 240, 240);
+}
+
+#stopBtn {
+  font-family: 'Press Start 2P', cursive;
+  display: none;
+}
+
+#stopBtn:hover {
+  color: rgb(241, 240, 240);
+}
+
+#play-count {
+  text-align: end;
+  width: 160px;
+  font-size: 20px;
 }
 
 #insect-container {
@@ -79,27 +102,4 @@ button:focus {
 
 .clicked {
   visibility: hidden;
-}
-
-#play-count {
-  text-align: end;
-  width: 160px;
-  font-size: 20px;
-}
-
-#startBtn {
-  font-family: 'Press Start 2P', cursive;
-}
-
-#startBtn:hover {
-  color: rgb(241, 240, 240);
-}
-
-#stopBtn {
-  font-family: 'Press Start 2P', cursive;
-  display: none;
-}
-
-#stopBtn:hover {
-  color: rgb(241, 240, 240);
 }
