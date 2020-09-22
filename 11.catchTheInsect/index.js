@@ -6,12 +6,12 @@ let maxScore = 0;
 document.getElementById('play-count').innerHTML = `Score=0`;
 
 function addInsect() {
-  setTimeout(createInsect(), 1000);
+  setInterval(createInsect, 1000);
 }
 
 function createInsect() {
   let position1 = Math.floor(Math.random() * 350) + 'px';
-  let position2 = Math.floor(Math.random() * 1000) + 'px';
+  let position2 = Math.floor(Math.random() * 800) + 'px';
 
   let insect = document.createElement('div');
   insect.setAttribute('class', 'insect');
@@ -22,10 +22,10 @@ function createInsect() {
   insect.addEventListener('click', removeInsect);
   document.getElementById('insect-container').appendChild(insect);
 
-  if (i < 10) {
+  if (i < 5) {
     time = 1000;
   } else {
-    time = 700;
+    time = 600;
   }
   i += 1;
   if (sec == -1) {
@@ -35,11 +35,9 @@ function createInsect() {
 
     if (count > localStorage.getItem('maxScore')) {
       localStorage.setItem('maxScore', count);
-      alert('축하합니다! 최고기록 갱신!');
+      alert('축하합니다. 최고기록 갱신!');
     }
     window.location.reload();
-  } else {
-    setTimeout(createInsect, time);
   }
 }
 
@@ -88,3 +86,4 @@ function playSound() {
 function pauseSound() {
   audio.pause();
 }
+
