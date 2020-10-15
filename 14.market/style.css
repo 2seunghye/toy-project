@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: #333;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nb {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-btn a {
+  padding: 3px;
+  border: solid 1px #999;
+  border-radius: 13px;
+}
+
+.delivery-btn a span {
+  font-size: 12px;
+  padding: 3px;
+}
+
+.delivery-btn a span:nth-child(1) {
+  color: #777;
+}
+
+.delivery-btn a span:nth-child(2) {
+  color: #5f0080;
+}
+
+.user-menu {
+  display: flex;
+}
+
+.menu-list {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.menu-list:nth-child(1) a {
+  color: #5f0080;
+}
+
+.menu-list .before::before {
+  content: '|';
+  padding: 15px;
+  color: #999;
+}
+
+.menu-list:nth-child(1) .before::before {
+  content: '';
+}
+
+.menu-list:nth-child(3) {
+  position: relative;
+}
+
+.menu-list:nth-child(3) .icon::after {
+  content: '▼';
+  padding-left: 5px;
+  font-size: 10px;
+  color: #333;
+}
+
+.sub-list {
+  z-index: 2;
+  background-color: #fff;
+  visibility: hidden;
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  padding: 3px 9px;
+  border: solid 1px #999;
+  width: 100px;
+}
+
+.sub-list li {
+  padding: 4px 2px;
+}
+
+.sub-list li a {
+  font-size: 11px;
+}
+
+.menu-list:nth-child(3):hover .sub-list {
+  visibility: visible;
+}
+
+.main-logo {
+  display: flex;
+}
+
+.main-logo img {
+  width: 160px;
+}
+
+.gnb-menu {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb a {
+  padding: 10px 20px;
+}
+
+.gnb li a span {
+  font-size: 16px;
+}
+
+.gnb-list::before {
+  content: '|';
+  font-size: 16px;
+  padding: 7px;
+  color: #999;
+}
+
+.gnb-list:nth-child(1)::before {
+  content: '';
+}
+
+.search-bar {
+  position: relative;
+}
+
+#search-inp {
+  padding: 3px 15px;
+  margin-left: 20px;
+  display: inline-block;
+  background-color: rgb(241, 241, 241);
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  width: 160px;
+  height: 35px;
+}
+
+#search-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.cart {
+  display: none;
+  padding-left: 20px;
+}
+
+.cart-btn img {
+  width: 23px;
+  height: 23px;
+}
