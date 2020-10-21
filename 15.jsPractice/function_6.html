@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var num = 1;
+      function gallery(direct) {
+        if (direct) {
+          if (num == 5) {
+            num = 1;
+          }
+          num++;
+        } else {
+          if (num == 1) {
+            num = 5;
+          }
+          num--;
+        }
+
+        var imgTag = document.getElementById('photo');
+        imgTag.setAttribute('src', num + '.jpg');
+      }
+    </script>
+  </head>
+  <body>
+    <img src="1.jpg" id="photo" />
+    <button onclick="gallery(0)">이전</button>
+    <button onclick="gallery(1)">다음</button>
+  </body>
+</html>

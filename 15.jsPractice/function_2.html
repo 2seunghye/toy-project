@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: wheat;
+      }
+    </style>
+    <script>
+      var color = ['white', 'yellow', 'aqua', 'purple'];
+
+      var i = 0;
+      function changeColor() {
+        i++;
+        if (i >= color.length) {
+          i = 0;
+        }
+      }
+
+      var bodyTag = document.getElementsByTagName('body');
+      bodyTag.style.backgroundColor = color[i];
+    </script>
+  </head>
+  <body id="theBody">
+    <button onclick="changeColor()">배경색 바꾸기</button>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var phoneNum = '010-4380-4342';
+      var result_1 = phoneNum.substring(0, phoneNum.length - 4);
+      document.write(result_1, '****', '<br>');
+
+      var ImgSrc = 'images/bnt_out.jpg';
+      var result_2 = ImgSrc.replace('out', 'over');
+      document.write(result_2, '<br>');
+
+      var menu = ['짜장면', '돈까스', '된장국', '김치찌개', '회덮밥'];
+      var menuNum = Math.floor(Math.random() * 5);
+      var result_3 = menu[menuNum];
+      document.write(result_3);
+    </script>
+  </head>
+  <body></body>
+</html>
