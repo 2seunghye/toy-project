@@ -1,0 +1,206 @@
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body {
+  color: #282828;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.header img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.gnb {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 30px;
+}
+
+.gnb li {
+}
+
+.gnb a {
+  font-size: 14px;
+  position: relative;
+}
+
+.gnb a::before {
+  content: '';
+  position: absolute;
+  background-color: #6ed54a;
+  height: 3px;
+  width: 0;
+  bottom: -16px;
+  transition: 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gnb a:hover::before {
+  width: 150%;
+}
+
+.tab-inner {
+  position: relative;
+}
+
+input[name='tabmenu'] {
+  display: none;
+}
+
+.tabs {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.cover_1 {
+  background: url(./img/1.jpeg);
+  background-size: cover;
+}
+
+.cover_2 {
+  background: url(./img/1.jpeg);
+  background-size: cover;
+}
+
+.cover_3 {
+  background: url(./img/1-1.jpg);
+  background-size: cover;
+}
+
+.items .cover {
+  float: left;
+  box-sizing: border-box;
+  width: 33.3333%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100%;
+}
+
+.btn label {
+  display: inline-block;
+  padding: 10px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+input[id='tab1']:checked ~ .tabs .items {
+  left: 0;
+}
+
+input[id='tab2']:checked ~ .tabs .items {
+  left: -100%;
+}
+
+input[id='tab3']:checked ~ .tabs .items {
+  left: -200%;
+}
+
+input[id='tab1']:checked ~ .btn label[for='tab1'],
+input[id='tab2']:checked ~ .btn label[for='tab2'],
+input[id='tab3']:checked ~ .btn label[for='tab3'] {
+  background-color: #333;
+  color: #fff;
+}
+
+.half_content {
+  padding: 0 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.half_content h3 {
+  font-size: 34px;
+  margin: 50px 0 0 0;
+}
+
+.half_content h4 {
+  font-size: 23px;
+  margin: 40px 0 0 0;
+}
+
+.half_content p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.half_content h6 {
+  font-size: 11px;
+  padding: 20px 0 0 0;
+  margin: 10px;
+}
+
+table {
+  width: 65%;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  border-collapse: collapse;
+}
+th,
+td {
+  font-size: 13px;
+  color: #555555;
+  padding: 20px;
+  border-bottom: 1px solid #707070;
+}
+
+th {
+  font-weight: 700;
+}
+
+.cover_2 img {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover_2 img {
+  max-width: 800px;
+  width: 75%;
+}

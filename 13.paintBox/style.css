@@ -1,3 +1,5 @@
+/* px단위보다 fr, vh 같은 단위를 사용해서 상대적이게 보이도록 하자.. */
+
 html {
   height: 100vh;
 }
@@ -5,6 +7,10 @@ html {
 body {
   color: #414141;
 }
+/* 
+body > *:not(.footer) {
+  padding: 0px 140px;
+} */
 
 p {
   font-family: 'EB Garamond', serif;

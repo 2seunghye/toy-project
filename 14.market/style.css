@@ -615,10 +615,3 @@ header {
   color: #5f0080;
 }
 
-.product {
-  display: flex;
-}
-
-.product-img img {
-  width: 100%;
-}
